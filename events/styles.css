@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* menu */
+.main-menu__item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 10px;
+}
+
+.main-menu__item--brand {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 680px) {
+    .main-menu {
+        display: flex;
+    }
+} 
+
+.main-menu--wrapper {
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+/* diary daily -- grid
+.diary-daily__time-slot {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.diary-daily__time {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.diary-daily__activity {
+    grid-column-start: 5;
+    grid-column-end: 13;
+}
+
+.diary-daily__day {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+/* diary daily  -- border 
+.diary-daily__time-slot, .diary-daily__activity:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.diary-daily__time-slot:first-child {
+    border-top: 1px solid black;
+}
+
+/* diary daily -- padding 
+.diary-daily__day, .diary-daily__time, .diary-daily__activity {
+    padding: 10px;
+}
+
+/* diary daily -- add new color 
+.diary-daily__activity--add-new {
+    color: darkblue;
+}
+*/
+
+/* max width */
+.main, .main-menu {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* footer allways at bottom */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.main,.main-menu--wrapper  {
+    flex: 0 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}
+.hide{
+    visibility: hidden;
+}
+.makeVisible{
+    visibility: visible;
+}
