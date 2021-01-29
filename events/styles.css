@@ -78,7 +78,7 @@ html {
 
 /* max width */
 .main, .main-menu {
-    max-width: 800px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
