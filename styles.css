@@ -1,119 +1,95 @@
-
-*{
+* {
     box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
-    
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     padding: 10px;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 /* menu */
-.main-menu__item {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 10px;
-}
-
-.main-menu__item--brand {
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 680px) {
-    .main-menu {
-        display: flex;
-    }
-} 
-
 .main-menu--wrapper {
-    background-color: gainsboro;
+    background-color: #0000FF; /* Blue */
     margin-bottom: 20px;
 }
 
-/* diary daily -- grid
-.diary-daily__time-slot {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-.diary-daily__time {
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.diary-daily__activity {
-    grid-column-start: 5;
-    grid-column-end: 13;
-}
-
-.diary-daily__day {
-    grid-column-start: 1;
-    grid-column-end: 13;
-}
-
-/* diary daily  -- border 
-.diary-daily__time-slot, .diary-daily__activity:not(:last-child) {
-    border-bottom: 1px solid black;
-}
-
-.diary-daily__time-slot:first-child {
-    border-top: 1px solid black;
-}
-
-/* diary daily -- padding 
-.diary-daily__day, .diary-daily__time, .diary-daily__activity {
-    padding: 10px;
-}
-
-/* diary daily -- add new color 
-.diary-daily__activity--add-new {
-    color: darkblue;
-}
-*/
-
-/* max width */
-.main, .main-menu {
+.main-menu {
+    display: flex;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-/* footer allways at bottom */
-html, body {
-    height: 100%;
+.main-menu__item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 10px;
+    color: #FFFFFF;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+
+.main-menu__item a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
 }
-.main,.main-menu--wrapper  {
+
+.main-menu__item a:hover {
+    text-decoration: underline;
+}
+
+.main-menu__item--brand {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* max width */
+.main {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* footer always at bottom */
+.main,
+.main-menu--wrapper {
     flex: 0 0 auto;
 }
-.footer {
-    flex-shrink: 0;
-    margin-top: auto;
-}
+
 /*Table settings*/
-table{
-    border: 2px solid black;
+table {
+    border: 2px solid #0000FF; /* Blue */
     border-collapse: collapse;
+    width: 100%;
 }
-th,td{
-    border: 1px solid black;
-    
-}
-.head_of_table{
+
+th,
+td {
+    border: 1px solid #0000FF; /* Blue */
+    padding: 8px;
     text-align: left;
-    border: 2px solid black;
 }
-.celkem{
-    border: 2px solid black;
+
+th {
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3 {
+    color: #FF0000; /* Red */
 }
