@@ -122,8 +122,11 @@ p {
     text-decoration: none;
 }
 
-.main-menu__brand .flag {
-    font-size: 1.5rem;
+.mark {
+    flex: none;
+    width: 1.6em;
+    height: 1.25em;
+    color: var(--orange);
 }
 
 .main-menu__brand:hover {
@@ -227,10 +230,16 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem 2rem;
+    gap: 2rem;
     max-width: var(--wrap);
     margin: 0 auto;
-    padding: 2rem var(--gutter);
+    padding: 2.5rem var(--gutter);
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
 }
 
 .footer__brand {
@@ -238,7 +247,38 @@ p {
     align-items: center;
     gap: 0.5rem;
     color: var(--white);
+    font-size: 1.125rem;
     font-weight: 700;
+}
+
+.footer__region {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+.footer__region:hover {
+    color: var(--white);
+}
+
+.footer__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer__region img {
+    display: block;
+    width: 220px;
+    height: auto;
+    transition: opacity 0.15s;
+}
+
+.footer__region:hover img {
+    opacity: 0.85;
 }
 
 /* two-column layout for info pages */
@@ -481,11 +521,6 @@ tbody tr:hover {
     font-size: 0.875rem;
     font-weight: 700;
     white-space: nowrap;
-}
-
-.tag--a {
-    background-color: var(--orange);
-    color: var(--night);
 }
 
 .summary {
