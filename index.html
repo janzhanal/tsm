@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?v=1.1">
+    <title>TSM Jižní Morava</title>
+    <meta name="description" content="Tréninkové středisko mládeže Jižní Morava – orientační běh, talenty 15–20 let.">
+    <meta name="theme-color" content="#fe5900">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M0 0h16v16H0z'/%3E%3Cpath fill='%23fe5900' d='M16 0v16H0z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;900&display=swap">
+    <link rel="stylesheet" href="styles.css?v=2.0">
 </head>
 <body>
-    <div class="main-menu--wrapper">
-        <nav class="main-menu">
-            <div class="main-menu__item main-menu__item--brand">TSM Jižní Morava</div>
-            <div class="main-menu__item"><a href="./index.html">Info</a></div>
-            <div class="main-menu__item"><a href="./members.html">Členové</a></div>
-            <div class="main-menu__item"><a href="./coaches.html">Realizační tým</a></div>
-            <div class="main-menu__item"><a href="./events.html">Akce</a></div>
+    <header class="main-menu--wrapper">
+        <nav class="main-menu" aria-label="Hlavní menu">
+            <a class="main-menu__brand" href="./index.html"><span class="flag" aria-hidden="true"></span>TSM Jižní Morava</a>
+            <ul class="main-menu__items">
+                <li class="main-menu__item"><a href="./index.html" aria-current="page">Info</a></li>
+                <li class="main-menu__item"><a href="./members.html">Členové</a></li>
+                <li class="main-menu__item"><a href="./coaches.html">Realizační tým</a></li>
+                <li class="main-menu__item"><a href="./events.html">Akce</a></li>
+            </ul>
         </nav>
+    </header>
+    <div class="page-head">
+        <div class="page-head__inner">
+            <h1>Tréninkové středisko mládeže</h1>
+            <p class="page-head__lead">Tréninkové středisko mládeže sdružuje jednotlivé talenty (15–20 let) všech klubů ve spádové oblasti.</p>
+        </div>
     </div>
     <main class="main">
-      <h1>Základní informace o TSM</h1>
-      <p>Tréninkové středisko mládeže sdružuje jednotlivé talenty (15-20 let) všech klubů ve spádové oblasti. Jeho základním úkolem je nadstavbová příprava nad klubovými aktivitami, dále sledování výkonnosti všech závodníků, spolupráce s osobními trenéry a zajištění přípravy těm členům, jež nemají vklubu přístup ktrenérskému vedení. Na začátku procesu je vstupní testování všech závodníků, které definuje  členskou  základnu  TSM.  Tu  tvoří  talentovaní  závodníci,  kteří  splní  určená  kritéria  při vstupním testování.</p>
-      <h2>Subjekt, pod který TSM Jižní Morava spadá</h2>
-      <p>
-      <b>Název</b>: Sportovní klub Brno - Žabovřesky z.s.</br>
-      <b>IČ</b>: 00214272</br>
-      <b>Sídlo</b>: Horákova 3080/7, Brno, 616 00</br>
-      <b>Číslo účtu</b>: 4067843369/0800</br>
-      <h3>Spolupracující a členské oddíly</h3>
-      <ul>
-        <li>Beta Ursus Orienteering</li>
-        <li>KOS Tesla Brno</li>
-        <li>SK Brno - Žabovřesky</li>
-      </ul>
-      </p>
+        <div class="split">
+            <section>
+                <h2>Základní informace o TSM</h2>
+                <p>Jeho základním úkolem je nadstavbová příprava nad klubovými aktivitami, dále sledování výkonnosti všech závodníků, spolupráce s osobními trenéry a zajištění přípravy těm členům, jež nemají v klubu přístup k trenérskému vedení.</p>
+                <p>Na začátku procesu je vstupní testování všech závodníků, které definuje členskou základnu TSM. Tu tvoří talentovaní závodníci, kteří splní určená kritéria při vstupním testování.</p>
+
+                <h2>Subjekt, pod který TSM Jižní Morava spadá</h2>
+                <dl class="facts">
+                    <div class="facts__row"><dt>Název</dt><dd>Sportovní klub Brno – Žabovřesky z.s.</dd></div>
+                    <div class="facts__row"><dt>IČ</dt><dd class="num">00214272</dd></div>
+                    <div class="facts__row"><dt>Sídlo</dt><dd>Horákova 3080/7, Brno, 616 00</dd></div>
+                    <div class="facts__row"><dt>Číslo účtu</dt><dd class="num">4067843369/0800</dd></div>
+                </dl>
+            </section>
+            <section>
+                <h2>Spolupracující a členské oddíly</h2>
+                <ul class="flag-list">
+                    <li><span class="flag" aria-hidden="true"></span>BETA URSUS Rosice</li>
+                    <li><span class="flag" aria-hidden="true"></span>KOS TJ Tesla Brno</li>
+                    <li><span class="flag" aria-hidden="true"></span>SK Brno – Žabovřesky</li>
+                    <li><span class="flag" aria-hidden="true"></span>SK Radioklub Blansko</li>
+                    <li><span class="flag" aria-hidden="true"></span>VSK Mendelu Brno</li>
+                </ul>
+            </section>
+        </div>
     </main>
-    <footer class="footer">&copy; 2025-26 by TSM Jižní Morava</footer>
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__brand"><span class="flag" aria-hidden="true"></span>TSM Jižní Morava</span>
+            <span>&copy; 2025–26 TSM Jižní Morava</span>
+        </div>
+    </footer>
 </body>
 </html>

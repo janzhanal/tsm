@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?v=1.1">
+    <title>Realizační tým · TSM Jižní Morava</title>
+    <meta name="description" content="Tréninkové středisko mládeže Jižní Morava – orientační běh, talenty 15–20 let.">
+    <meta name="theme-color" content="#fe5900">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M0 0h16v16H0z'/%3E%3Cpath fill='%23fe5900' d='M16 0v16H0z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;900&display=swap">
+    <link rel="stylesheet" href="styles.css?v=2.0">
 </head>
 <body>
-    <div class="main-menu--wrapper">
-        <nav class="main-menu">
-            <div class="main-menu__item main-menu__item--brand">TSM Jižní Morava</div>
-            <div class="main-menu__item"><a href="./index.html">Info</a></div>
-            <div class="main-menu__item"><a href="./members.html">Členové</a></div>
-            <div class="main-menu__item"><a href="./coaches.html">Realizační tým</a></div>
-            <div class="main-menu__item"><a href="./events.html">Akce</a></div>
+    <header class="main-menu--wrapper">
+        <nav class="main-menu" aria-label="Hlavní menu">
+            <a class="main-menu__brand" href="./index.html"><span class="flag" aria-hidden="true"></span>TSM Jižní Morava</a>
+            <ul class="main-menu__items">
+                <li class="main-menu__item"><a href="./index.html">Info</a></li>
+                <li class="main-menu__item"><a href="./members.html">Členové</a></li>
+                <li class="main-menu__item"><a href="./coaches.html" aria-current="page">Realizační tým</a></li>
+                <li class="main-menu__item"><a href="./events.html">Akce</a></li>
+            </ul>
         </nav>
+    </header>
+    <div class="page-head">
+        <div class="page-head__inner">
+            <h1>Realizační tým</h1>
+        </div>
     </div>
     <main class="main">
-      <h1>Realizační tým</h1>
-      <p>
-      <b>Vedoucí</b>: Jan Fiala - predseda@zabiny.club</br>
-      <b>Vedoucí trenér</b>: Jan Zháňal - dorost@zabiny.club, +420 725 258 326</br>
-      <b>Trenérská rada</b>: Alexandr Jordanov, Radovan Čech, Petr Dvořáček</br>
-      <b>Další trenéři a spolupracovníci</b>: Stanislav Mokrý, Alexandr Jordanov, Barbora Zháňalová, Jiří Ehl, Klára Barnatová, Jakub Šrom</br>
-     </p>
-     <p>
-        Trenérská rada připravuje plán přípravy, organizaci soustředění, komunikaci s členy TSM a ústředním trenérem mládeže; trenéři a spolupracovníci pomáhají s přípravou konkrétních soustředění. Každé soustředění má vedoucího, který se stará o ubytování, přihlášky a úkoluje ostatní trenéry, a stavitelé tratí. Je zodpovědný za sportovní náplň daného soustředění.
-     </p>
+        <dl class="people">
+            <div class="people__row">
+                <dt>Vedoucí</dt>
+                <dd>
+                    <div class="people__name">Jan Fiala</div>
+                    <div class="people__contact"><a href="mailto:predseda@zabiny.club">predseda@zabiny.club</a></div>
+                </dd>
+            </div>
+            <div class="people__row">
+                <dt>Vedoucí trenér</dt>
+                <dd>
+                    <div class="people__name">Jan Zháňal</div>
+                    <div class="people__contact">
+                        <a href="mailto:dorost@zabiny.club">dorost@zabiny.club</a>
+                        <a href="tel:+420725258326" class="num">+420 725 258 326</a>
+                    </div>
+                </dd>
+            </div>
+            <div class="people__row">
+                <dt>Trenérská rada</dt>
+                <dd>
+                    <ul class="names">
+                        <li>Alexandr Jordanov</li>
+                        <li>Radovan Čech</li>
+                        <li>Petr Dvořáček</li>
+                    </ul>
+                </dd>
+            </div>
+            <div class="people__row">
+                <dt>Další trenéři a spolupracovníci</dt>
+                <dd>
+                    <ul class="names">
+                        <li>Stanislav Mokrý</li>
+                        <li>Alexandr Jordanov</li>
+                        <li>Barbora Zháňalová</li>
+                        <li>Jiří Ehl</li>
+                        <li>Klára Barnatová</li>
+                        <li>Jakub Šrom</li>
+                    </ul>
+                </dd>
+            </div>
+        </dl>
+
+        <h2>Jak tým funguje</h2>
+        <p>Trenérská rada připravuje plán přípravy, organizaci soustředění, komunikaci s členy TSM a ústředním trenérem mládeže; trenéři a spolupracovníci pomáhají s přípravou konkrétních soustředění. Každé soustředění má vedoucího, který se stará o ubytování, přihlášky a úkoluje ostatní trenéry, a stavitelé tratí. Je zodpovědný za sportovní náplň daného soustředění.</p>
     </main>
-    <footer class="footer">&copy; 2025-26 by TSM Jižní Morava</footer>
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__brand"><span class="flag" aria-hidden="true"></span>TSM Jižní Morava</span>
+            <span>&copy; 2025–26 TSM Jižní Morava</span>
+        </div>
+    </footer>
 </body>
 </html>
